@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mostafa Ahmed | Network & Infrastructure Engineer</title>
+<meta name="description" content="Mostafa Ahmed. Network, Windows Server, Active Directory, pfSense, virtualization and security monitoring.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EEF2F5; --panel:#FFFFFF; --ink:#10233A; --muted:#51647A; --line:#CBD5DF;
+  --blue:#1F6FEB; --amber:#D98A00; --green:#2E9B5F; --red:#C8453B; --violet:#7A55C9;
+  --head:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --body:"Hanken Grotesk","Segoe UI",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--paper:#0F1A28; --panel:#16253A; --ink:#E7EEF6; --muted:#9DB0C5; --line:#2A3E58;
+    --blue:#5B9BFF; --amber:#F0B040; --green:#55C98A; --red:#F07A70; --violet:#A98CF0;}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.6}
+a{color:var(--blue)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header.top{border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:18px;padding-bottom:18px;flex-wrap:wrap;gap:12px}
+.brand{font-family:var(--head);font-weight:800;font-size:1.25rem}
+nav{display:flex;flex-wrap:wrap;gap:6px 20px}
+nav a{color:var(--ink);text-decoration:none;font-weight:500}
+nav a:hover{color:var(--blue)}
+.hero{padding:72px 0 56px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+h1{font-family:var(--head);font-weight:800;font-size:clamp(2.4rem,6vw,4rem);line-height:1.05;margin:0 0 16px}
+.role{font-family:var(--head);font-weight:600;font-size:1.3rem;color:var(--blue);margin:0 0 18px}
+.lead{max-width:56ch;color:var(--muted);margin:0 0 28px}
+.btn{display:inline-block;padding:12px 22px;border-radius:6px;font-weight:600;text-decoration:none;margin-right:10px;margin-bottom:8px}
+.btn.primary{background:var(--blue);color:#fff}
+.btn.ghost{border:1.5px solid var(--ink);color:var(--ink)}
+.topo{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px}
+.topo svg{width:100%;height:auto;display:block}
+.topo text{font-family:var(--body);font-size:12px;fill:var(--ink)}
+.topo .box{fill:var(--paper);stroke:var(--ink);stroke-width:1.5}
+.topo .cable{stroke-width:3;fill:none}
+.topo figcaption{font-size:.85rem;color:var(--muted);margin-top:8px}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-family:var(--head);font-weight:700;font-size:2rem;margin:0 0 8px}
+.sub{color:var(--muted);margin:0 0 32px;max-width:60ch}
+.proj{background:var(--panel);border:1px solid var(--line);border-left:8px solid var(--c,var(--blue));border-radius:8px;padding:24px 28px;margin-bottom:20px}
+.proj h3{font-family:var(--head);font-size:1.4rem;margin:0 0 4px}
+.who{font-size:.95rem;font-weight:600;color:var(--c,var(--blue));margin:0 0 14px}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.cols h4{margin:0 0 6px;font-size:.95rem;color:var(--muted);font-weight:600}
+.cols p,.cols ul{margin:0;font-size:1rem}
+.cols ul{padding-left:18px}
+.tags{margin-top:16px;display:flex;flex-wrap:wrap;gap:8px}
+.tags span{font-size:.85rem;padding:3px 10px;border:1px solid var(--line);border-radius:999px;color:var(--muted)}
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.skill{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:20px 24px}
+.skill h3{font-family:var(--head);margin:0 0 8px;font-size:1.15rem}
+.skill p{margin:0;color:var(--muted)}
+.creds{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.note{font-size:.95rem;color:var(--muted);margin-top:16px;max-width:64ch}
+footer{border-top:1px solid var(--line);padding:32px 0;color:var(--muted);font-size:.95rem}
+@media (max-width:820px){
+  .hero .wrap,.cols,.skills,.creds{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <div class="brand">Mostafa Ahmed</div>
+  <nav aria-label="Main">
+    <a href="#projects">Projects</a><a href="#documentation">Documentation</a><a href="#skills">Skills</a><a href="#credentials">Credentials</a><a href="#contact">Contact</a>
+  </nav>
+</div></header>
+
+<main>
+<div class="hero"><div class="wrap">
+  <div>
+    <h1>Mostafa Ahmed</h1>
+    <p class="role">Network &amp; Infrastructure Engineer</p>
+    <p class="lead">I design, build and run complete IT environments: structured cabling, VLANs, firewalls, Wi-Fi, Windows Server with Active Directory, virtualization and security monitoring. My main project is a full college infrastructure deployment, built from the rack up.</p>
+    <a class="btn primary" href="#projects">See the projects</a>
+    <a class="btn ghost" href="#contact">Contact me</a>
+  </div>
+  <figure class="topo" style="margin:0">
+    <svg viewBox="0 0 360 300" role="img" aria-label="Simplified network layout: Internet to pfSense firewall to core switch, which serves servers, Wi-Fi access points, guest network and lab PCs">
+      <rect class="box" x="130" y="10" width="100" height="34" rx="6"/><text x="180" y="32" text-anchor="middle">Internet</text>
+      <path class="cable" d="M180 44V70" stroke="var(--red)"/>
+      <rect class="box" x="120" y="70" width="120" height="34" rx="6"/><text x="180" y="92" text-anchor="middle">pfSense firewall</text>
+      <path class="cable" d="M180 104V130" stroke="var(--blue)"/>
+      <rect class="box" x="110" y="130" width="140" height="34" rx="6"/><text x="180" y="152" text-anchor="middle">Core switch + VLANs</text>
+      <path class="cable" d="M140 164V200H60V220" stroke="var(--green)"/>
+      <path class="cable" d="M170 164V220" stroke="var(--amber)"/>
+      <path class="cable" d="M200 164V220" stroke="var(--violet)"/>
+      <path class="cable" d="M220 164V200H300V220" stroke="var(--blue)"/>
+      <rect class="box" x="10" y="220" width="100" height="40" rx="6"/><text x="60" y="244" text-anchor="middle">Servers</text>
+      <rect class="box" x="125" y="220" width="95" height="40" rx="6"/><text x="172" y="237" text-anchor="middle">Wi-Fi</text><text x="172" y="252" text-anchor="middle">APs</text>
+      <rect class="box" x="230" y="220" width="55" height="40" rx="6"/><text x="257" y="237" text-anchor="middle">Guest</text><text x="257" y="252" text-anchor="middle">VLAN</text>
+      <rect class="box" x="292" y="220" width="62" height="40" rx="6"/><text x="323" y="237" text-anchor="middle">Lab</text><text x="323" y="252" text-anchor="middle">PCs</text>
+    </svg>
+    <figcaption>Simplified layout of the college network. Colors mark cable and network roles.</figcaption>
+  </figure>
+</div></div>
+
+<section id="projects"><div class="wrap">
+  <h2>Projects</h2>
+  <p class="sub">All of these belong to one college infrastructure deployment. I built it end to end. Some teammates joined me on parts of the work, and the security monitoring stack is entirely mine.</p>
+
+  <article class="proj" style="--c:var(--blue)">
+    <h3>Physical Network and VLANs</h3>
+    <p class="who">Built by me, with teammates helping on some of the cabling</p>
+    <div class="cols">
+      <div><h4>Problem</h4><p>New labs and departments needed a clean, maintainable wired network that could grow.</p></div>
+      <div><h4>What I did</h4><ul><li>Installed racks and Cat6 cabling with patch panels and labeling</li><li>Configured switches and VLANs per department</li><li>Prepared a price comparison from several suppliers for wiring five computer labs</li></ul></div>
+      <div><h4>Result</h4><p>A documented, segmented network that is easier to maintain and extend.</p></div>
+    </div>
+    <div class="tags"><span>Cat6</span><span>Patch panels</span><span>VLANs</span><span>Switching</span></div>
+  </article>
+
+  <article class="proj" style="--c:var(--red)">
+    <h3>pfSense Firewall, VPN and Web Filtering</h3>
+    <p class="who">Built by me</p>
+    <div class="cols">
+      <div><h4>Problem</h4><p>The firewall ran on an old tower PC that hung and slowed the internet.</p></div>
+      <div><h4>What I did</h4><ul><li>Migrated pfSense to a Dell PowerEdge R250</li><li>Set up DHCP and traffic rules between networks</li><li>Configured pfBlockerNG for domain blocking</li><li>Set up OpenVPN for authorized remote access</li></ul></div>
+      <div><h4>Result</h4><p>A stable edge with controlled access and secure remote entry for the network, software and security teams.</p></div>
+    </div>
+    <div class="tags"><span>pfSense</span><span>OpenVPN</span><span>pfBlockerNG</span><span>DHCP</span></div>
+  </article>
+
+  <article class="proj" style="--c:var(--amber)">
+    <h3>Centralized Wi-Fi and Guest Network</h3>
+    <p class="who">Built by me</p>
+    <div class="cols">
+      <div><h4>Problem</h4><p>Every access point was managed on its own, and guests could reach the internal network.</p></div>
+      <div><h4>What I did</h4><ul><li>Installed Omada Controller on Windows Server for TP-Link APs</li><li>Configured a Cisco AP as a Mobility Express controller</li><li>Built a MikroTik voucher system with time and speed limits and a login portal</li><li>Isolated guests from the main network</li></ul></div>
+      <div><h4>Result</h4><p>One place to manage Wi-Fi, and a guest network that is controlled and separated.</p></div>
+    </div>
+    <div class="tags"><span>Omada</span><span>Cisco WLC</span><span>MikroTik</span><span>Captive portal</span></div>
+  </article>
+
+  <article class="proj" style="--c:var(--green)">
+    <h3>Windows Server and Active Directory</h3>
+    <p class="who">Built by me</p>
+    <div class="cols">
+      <div><h4>Problem</h4><p>No central control over users, lab devices or permissions.</p></div>
+      <div><h4>What I did</h4><ul><li>Deployed an HPE ProLiant DL380 Gen9 as the main server</li><li>Created the AD domain, DNS and the OU structure</li><li>Applied Group Policy to lock down lab devices: no CMD, PowerShell, Control Panel, Registry or USB storage</li><li>Set up a QNAP NAS for shared folders and backups</li></ul></div>
+      <div><h4>Result</h4><p>Centralized authentication, protected lab machines and a stable, easy-to-manage environment.</p></div>
+    </div>
+    <div class="tags"><span>Windows Server</span><span>AD DS</span><span>DNS</span><span>Group Policy</span><span>QNAP</span></div>
+  </article>
+
+  <article class="proj" style="--c:var(--violet)">
+    <h3>Proxmox Virtualization and Web Server Migration</h3>
+    <p class="who">Built by me</p>
+    <div class="cols">
+      <div><h4>Problem</h4><p>The website shared a Windows Server with user data, and each new service meant buying new hardware.</p></div>
+      <div><h4>What I did</h4><ul><li>Set up Proxmox VE as the hypervisor</li><li>Moved the website from IIS to an isolated Ubuntu VM running Nginx</li></ul></div>
+      <div><h4>Result</h4><p>Better isolation, a smaller attack surface and no extra hardware cost.</p></div>
+    </div>
+    <div class="tags"><span>Proxmox</span><span>Ubuntu Server</span><span>Nginx</span><span>Linux CLI</span></div>
+  </article>
+
+  <article class="proj" style="--c:var(--blue)">
+    <h3>Security Monitoring with Wazuh and Suricata</h3>
+    <p class="who">Built entirely by me</p>
+    <div class="cols">
+      <div><h4>Problem</h4><p>No visibility into endpoint activity or network traffic.</p></div>
+      <div><h4>What I did</h4><ul><li>Deployed a dedicated Ubuntu CLI VM running Wazuh and Suricata</li><li>Installed Sysmon and the Wazuh agent on all Windows machines</li></ul></div>
+      <div><h4>Result</h4><p>Central log collection and alerts for endpoints and network traffic.</p></div>
+    </div>
+    <div class="tags"><span>Wazuh</span><span>Suricata</span><span>Sysmon</span><span>Ubuntu</span></div>
+  </article>
+</div></section>
+
+<section id="documentation"><div class="wrap">
+  <h2>Project documentation</h2>
+  <p class="sub">Every project above is fully documented: network topology, configurations, before and after comparisons, and final results. A complete presentation covers the whole deployment.</p>
+  <p class="note" style="margin-top:0">Full documentation and presentation are available on request. Get in touch and I will share them.</p>
+  <a class="btn primary" href="#contact" style="margin-top:16px">Request the documentation</a>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2>Skills</h2>
+  <p class="sub">What I use day to day.</p>
+  <div class="skills">
+    <div class="skill"><h3>Networking</h3><p>TCP/IP, VLANs, routing, DHCP, DNS, structured cabling, Cisco switching, wireless controllers</p></div>
+    <div class="skill"><h3>Firewalls and VPN</h3><p>pfSense, OpenVPN, pfBlockerNG, MikroTik. FortiGate is next on my list.</p></div>
+    <div class="skill"><h3>Windows</h3><p>Windows Server, Active Directory, DNS, Group Policy, PowerShell</p></div>
+    <div class="skill"><h3>Linux and Virtualization</h3><p>Ubuntu Server CLI, Nginx, Bash, Proxmox VE</p></div>
+  </div>
+</div></section>
+
+<section id="credentials"><div class="wrap">
+  <h2>Credentials and training</h2>
+  <p class="sub">What I hold, and what I have studied.</p>
+  <div class="creds">
+    <div class="skill"><h3>Certification</h3><p>CCST Cybersecurity, Cisco</p></div>
+    <div class="skill"><h3>Training and hands-on study</h3><p>CCNA, CCNP Security and MCSA course material, Linux administration, ethical hacking</p></div>
+  </div>
+  <p class="note">The training items are study paths, not certificates.</p>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <h2>Contact</h2>
+  <p class="sub">Interested in networking, infrastructure or security work? Get in touch.</p>
+  <a class="btn primary" href="https://github.com/MostafaAhmed-ct">GitHub</a>
+  <a class="btn ghost" href="https://www.linkedin.com/in/mostafa-ahmed-it/" target="_blank" rel="noopener">LinkedIn</a>
+  <a class="btn ghost" href="mailto:m47595557@gmail.com">Email</a>
+  <a class="btn ghost" href="https://wa.me/201025997581" target="_blank" rel="noopener">WhatsApp</a>
+  <p class="note">Email: m47595557@gmail.com<br>Phone: <a href="tel:+201025997581">01025997581</a></p>
+</div></section>
+</main>
+
+<footer><div class="wrap">© 2026 Mostafa Ahmed</div></footer>
+</body>
+</html>
